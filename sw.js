@@ -1,4 +1,4 @@
-const mainCache = "restaurant-reviews-v1";
+const mainCache = "Restaurant-Review-App-Udacity";
 
 self.addEventListener('install', (evt) => {
     evt.waitUntil(
