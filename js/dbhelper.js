@@ -2,8 +2,8 @@ class DBHelper {
     static registerServiceWorker() {
         if (!navigator.serviceWorker) return;
         window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/Restaurant-Review-App-Udacity/sw.js', {
-                scope: '/Restaurant-Review-App-Udacity/'
+            navigator.serviceWorker.register('/Restaurat-Review-App-Udacity/sw.js', {
+                scope: '/Restaurat-Review-App-Udacity/'
             }).then(function(reg) {
                 console.log("Service Worker Registered with scope: ", reg.scope);
             }).catch(function(err) {
