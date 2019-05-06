@@ -1,8 +1,8 @@
-const mainCache = "Restaurat-Review-App-Udacity";
+var CACHE_NAME = "Restaurat-Review-App-Udacity";
 
 self.addEventListener('install', (evt) => {
     evt.waitUntil(
-        caches.open(mainCache).then((cache) => {
+        caches.open(CACHE_NAME).then((cache) => {
             self.currentCache = cache;
             return cache.addAll([
                 'index.html',
